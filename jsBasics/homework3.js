@@ -1,3 +1,4 @@
+import chalk from 'chalk'
 // TASK 1.1
 
 function test1 (width, height) {
@@ -33,7 +34,6 @@ console.log(isAdult(17))
 
 // TASK 3
 
-import chalk from 'chalk'
 function checkOrder (available, ordered) {
     if (available < ordered) {
         return (chalk.red ('Your order is too large, we donʼt have enough goods'))
