@@ -1,5 +1,5 @@
 async function fetchTodo() {
-    const response = await fetch ('<https://jsonplaceholder.typicode.com/todos/1>')
+    const response = await fetch ('https://jsonplaceholder.typicode.com/todos/1')
     .then(response => {
         if(!response.ok){
             throw new Error('Failed to fetch todo')
@@ -9,7 +9,7 @@ async function fetchTodo() {
 }
 
 async function fetchUser () {
-    const response = await fetch ('<https://jsonplaceholder.typicode.com/users/1>')
+    const response = await fetch ('https://jsonplaceholder.typicode.com/users/1')
     .then (response => {
         if (!response.ok) {
             throw new Error ('Failed to fetch user')

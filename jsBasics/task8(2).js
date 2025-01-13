@@ -1,5 +1,5 @@
 function fetchTodo() {
-    return fetch ('<https://jsonplaceholder.typicode.com/todos/1>')
+    return fetch ('https://jsonplaceholder.typicode.com/todos/1')
     .then(response => {
         if(!response.ok){
             throw new Error('Failed to fetch todo')
@@ -9,7 +9,7 @@ function fetchTodo() {
 }
 
 function fetchUser () {
-    return fetch ('<https://jsonplaceholder.typicode.com/users/1>')
+    return fetch ('https://jsonplaceholder.typicode.com/users/1')
     .then (response => {
         if (!response.ok) {
             throw new Error ('Failed to fetch user')
@@ -33,4 +33,3 @@ Promise.race ([fetchTodo(), fetchUser()])
     .catch(error => {
         console.error('Error in Promise.race:', error)
     })
-    
