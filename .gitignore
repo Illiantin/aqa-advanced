@@ -4,3 +4,4 @@ node_modules
 ../eslint.config.mjs
 ../git_basics
 ../mistake.js
+../DS_Store
