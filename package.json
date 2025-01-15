@@ -18,11 +18,14 @@
   "scripts": {
     "lint": "eslint .",
     "format": "prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+     "precommit": "lint-staged"
   },
   "lint-staged": {
-  "*.{js,jsx,ts,tsx}": [
-    "eslint --fix"
+  "*.{js,jsx}": [
+    "eslint --fix",
+    "node_modules/.bin/eslint",
+    "git add"
   ]
 }
 }
